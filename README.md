@@ -2,7 +2,7 @@
 
 ## Back-End
 - [x] Tiene que traer de Mercado libre
-- [ ] Tiene que guardar las query y hacer cache ExtraCredit
+- [x] Tiene que guardar las query y hacer cache ExtraCredit
 
 
 ## Fronted End
