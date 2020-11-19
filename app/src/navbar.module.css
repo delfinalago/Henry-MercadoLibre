@@ -1,0 +1,51 @@
+ .logoml{
+  width: 10px;
+  height: 10px;
+}
+.nav {
+  display:grid;
+  padding: 10px 10px;
+  height: 5rem;
+  color:black!important;
+  background-color: yellow;
+  background-size: 100% 100%;
+  
+}
+.search{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;  
+}
+.input{
+  display: grid;
+  border-color: yellow;
+  grid-column: 3 / 4;
+  border-radius: 35px;
+  width: 250px;
+  height: 30px;
+}
+.botonbuscar{
+  display: grid;
+  grid-column: 5 / 6;
+  text-align: center;
+  width: 60px;
+  align-items: center;
+  border-radius: 15px;
+  color: black;
+  background-color: blanchedalmond;
+}
+
+.cartas{
+  margin-top: 5px;
+  display: grid;
+  padding:50px;
+}
+
+
+ 
+/*  
+.box{
+  margin: 100px auto;
+  width: 300px;
+  height: 50px;
+} */
