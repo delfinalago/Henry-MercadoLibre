@@ -80,7 +80,7 @@ const Catalogo = (props) => {
         <option value='new' selected>New</option>
         <option value='used'>Used</option>
       </select>  
-      </div>
+</div>
           <div className="pagination">
             <Pagination
                activePage={ activePage }

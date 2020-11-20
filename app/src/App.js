@@ -73,7 +73,7 @@ const useDataApi = (initialUrl, initialData) => {
 function App() {
   const [query, setQuery] = useState('');
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
-    'http://localhost:3000/api/search/cuchas',
+    'http://localhost:3000/api/search/zapatillas',
     { hits: [] },
   );
 

@@ -1,11 +1,12 @@
  .logoml{
   width: 10px;
   height: 10px;
+  margin-left: 20px;
 }
 .nav {
   display:grid;
   padding: 10px 10px;
-  height: 5rem;
+  height: 6rem;
   color:black!important;
   background-color: yellow;
   background-size: 100% 100%;
