@@ -24,17 +24,18 @@ const ProductCard = (props) => {
            
             src={props.item.thumbnail}
             /> 
-            <Card.Title className={styles.title}>
+            <Card.Title className={styles.titloArticulo}>
               {props.item.title} 
               </Card.Title>
 
               <Card.Subtitle className={styles.precio} variant="body2" color="textSecondary" component="p" >
-              Precio:{props.item.price} {props.item.currency_id} </Card.Subtitle>
+              Precio: ${props.item.price} {props.item.currency_id} </Card.Subtitle>
               <Card.Subtitle>
-              Condicion: {props.item.condition} &nbsp;|
+              Condicion: {props.item.condition} 
+              <Card.Subtitle>
               Stock: {props.item.available_quantity}
               </Card.Subtitle>
-              
+              </Card.Subtitle>
             
           
         </Card>  

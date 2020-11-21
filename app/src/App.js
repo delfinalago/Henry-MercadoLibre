@@ -116,11 +116,6 @@ function App() {
       ) : (
         <ul className={styles.cartas}>
           <Catalogo data={data} isLoading={isLoading}/>
-          {/* {data.hits.map(item => (
-            <li key={item.id}>
-              {item.title}
-            </li>
-          ))} */}
         </ul>
 
 

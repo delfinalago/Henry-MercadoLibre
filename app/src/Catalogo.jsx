@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Pagination from "react-js-pagination";
 import ProductCard from './ProductCard';
 import styles from './catalogo.module.css'
+import { Container } from 'react-bootstrap';
 
 
 const Catalogo = (props) => {
@@ -52,10 +53,28 @@ const Catalogo = (props) => {
    
 
   return (
-  <div>
+    <div> 
       <div className={styles.catalogo}>
       <h1>Catalogo</h1>
       </div>
+  <Container className={styles.filtros}>
+       Precio: <select defaultValue='asc'
+      onChange={event => setOrder(event.target.value)}
+      className={styles.filtrosInput} >
+        <option value='asc' selected>Asc</option>
+        <option value='desc'>Desc</option>
+      </select>
+
+
+      Condicion: <select defaultValue='new'
+      onChange={event => setCondition(event.target.value)}
+      className={styles.filtrosInput}  >
+        <option value='new' selected>New</option>
+        <option value='used'>Used</option>
+      </select>  
+</Container>
+  
+     
       { props.isLoading ? (
         <div>Loading ...</div>
       ) : (
@@ -64,23 +83,7 @@ const Catalogo = (props) => {
      </div>
      
       )}
-<div>
-       Precio: <select defaultValue='asc'
-      onChange={event => setOrder(event.target.value)}
-      className="browser-default custom-select" >
-        <option value='asc' selected>Asc</option>
-        <option value='desc'>Desc</option>
-      </select>
 
-
-      Condicion:
-      <select defaultValue='new'
-      onChange={event => setCondition(event.target.value)}
-      className="browser-default custom-select" >
-        <option value='new' selected>New</option>
-        <option value='used'>Used</option>
-      </select>  
-</div>
           <div className="pagination">
             <Pagination
                activePage={ activePage }
